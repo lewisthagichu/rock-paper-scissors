@@ -6,28 +6,27 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Rock Paper Scissors</title>
         <link rel="stylesheet" href="style.css">
+        
     </head>
     <body>
         <div class="container">
-            <h1>DUEL OF THE DUSTY TRAILS</h1>
-            <h2>WIN FIVE ROUNDS TO BE THE VICTOR</h2>
-            <h2>
+            <h1 class="title">CLASH OF ELEMENTS: ROCK VS. PAPER VS. SCISSORS</h1>
+            <h2 class="tagline">WIN FIVE ROUNDS TO BE THE VICTOR</h2>
+                      
+            <h2 class="cta">CHOOSE YOUR WEAPON!</h2>
+            <div class="action">
+              <input class="options" type="image" src="./img/rock 1.png" value="Rock" />
+              <input class="options" type="image" src="./img/paper 1.png" value="Paper" />
+              <input class="options" type="image" src="./img/scissors 1.png" value="Scissors" />
+            </div>
+
+            <h2 class="score-board">
               Player <span id="playerScore">0</span> - <span id="computerScore">0</span> Computer
             </h2>
-            <div class="display-moves">
-              <div class="move">
-                <img id="p-move" src="./img/Rock.png">
-              </div>
-              <div class="separator">VS</div>
-              <div class="move">
-                <img id="c-move" src="./img/Paper.png">
-              </div>
-            </div>
-            <h2>CHOOSE YOUR WEAPON!</h2>
-            <div class="action">
-              <input class="options" type="image" src="./img/Rock.png" value="Rock" />
-              <input class="options" type="image" src="./img/Paper.png" value="Paper" />
-              <input class="options" type="image" src="./img/Scissors.png" value="Scissors" />
+
+            <div class="results-container"></div>
+            <div class="restart">
+              <button class="restart-btn">Restart Game</button>
             </div>
         </div>    
         <script src="script.js"></script>
