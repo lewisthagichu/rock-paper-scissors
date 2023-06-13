@@ -15,9 +15,7 @@ options.forEach((option) => {
 
     compareInputs(pInput, cInput);
     updateScore();
-    if (checkWinner()) {
-      declareWinner();
-    }
+   
   });
 });
 
@@ -57,6 +55,14 @@ function compareInputs(pInput, cInput) {
       computerScore++;
     }
   }
+
+  // Call checkWinner function before updating scores
+  if (checkWinner()) {
+    declareWinner();
+    return;
+  }
+
+  updateScore();
 }
 
 // function to display results after each round
